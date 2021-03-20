@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace ASSIST
 {
@@ -19,6 +20,13 @@ namespace ASSIST
 
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DBConnect dBConnect=new DBConnect();
+            dBConnect.Insert("INSERT INTO tblSubject (tblSubjectID, tblSubjectName,tblSubjectGrade) VALUES(1,'gogo', 8)");
 
         }
     }
