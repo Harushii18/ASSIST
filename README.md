@@ -2,21 +2,21 @@
 ## ASSIST APP documentation
 
  **1.	What the app will do**
-  []	Insert new tutor records
-  [] Update tutor information
-  [] Allow tutors to log in remotely and create an account
-  [] Delete tutor records
-  [] Insert new student records
-  [] Update student information
-  [] Delete student records
-  [] Assign tutors to students
-  [] Create a pdf printout of the assignment
-  [] Look up assigned students and tutors
-  [] Login 
-  [] Insert new director
-  [] Add new subjects
-  [] Delete/ remove subjects
-  [] Check up on existing curriculum
+  [ ]	Insert new tutor records
+  [ ] Update tutor information
+  [ ] Allow tutors to log in remotely and create an account
+  [ ] Delete tutor records
+  [ ] Insert new student records
+  [ ] Update student information
+  [ ] Delete student records
+  [ ] Assign tutors to students
+  [ ] Create a pdf printout of the assignment
+  [ ] Look up assigned students and tutors
+  [ ] Login 
+  [ ] Insert new director
+  [ ] Add new subjects
+  [ ] Delete/ remove subjects
+  [ ] Check up on existing curriculum
 
 **2.	Database layouts**
 
