@@ -103,10 +103,8 @@ namespace ASSIST
         }
 
         //Update statement
-        public void Update()
+        public void Update(string query)
         {
-            string query = "UPDATE tableinfo SET name='Joe', age='22' WHERE name='John Smith'";
-
             //Open connection
             if (this.OpenConnection() == true)
             {
@@ -126,10 +124,9 @@ namespace ASSIST
         }
 
         //Delete statement
-        public void Delete()
+        public void Delete(string query)
         {
-            string query = "DELETE FROM tableinfo WHERE name='John Smith'";
-
+           
             if (this.OpenConnection() == true)
             {
                 MySqlCommand cmd = new MySqlCommand(query, connection);
@@ -138,11 +135,11 @@ namespace ASSIST
             }
         }
 
-
+        //=============================================================
         //Select statement
-        public List<string>[] Select()
+        public List<string>[] Select(string query)
         {
-            string query = "SELECT * FROM tableinfo";
+       
 
             //Create a list to store the result
             List<string>[] list = new List<string>[3];
@@ -161,6 +158,7 @@ namespace ASSIST
                 //Read the data and store them in the list
                 while (dataReader.Read())
                 {
+                    //ALTER THIS ACCORDINGLY
                     list[0].Add(dataReader["id"] + "");
                     list[1].Add(dataReader["name"] + "");
                     list[2].Add(dataReader["age"] + "");
@@ -182,9 +180,8 @@ namespace ASSIST
         }
 
         //Count statement
-        public int Count()
+        public int Count(string query)
         {
-            string query = "SELECT Count(*) FROM tableinfo";
             int Count = -1;
 
             //Open Connection
